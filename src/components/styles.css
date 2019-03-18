@@ -1,0 +1,215 @@
+#header{
+    height: 50px;
+    border-bottom: 3px solid #32ba7f;
+    display: flex;
+    flex-direction: column;
+}
+
+#header > div{
+    color: #777;
+    width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    padding-top: 10px;
+    justify-content: space-between;
+}
+
+.nav-link-container, .profile{
+    display: flex;
+    border-bottom: 1px solid #FFF
+}
+
+.nav-link{
+    display: inline-block;
+    color: #777;
+    text-decoration: none;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.2s, background-color 0.2s, opacity .2s;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.nav-link:hover{
+    background-color: #32ba7f;
+    color: #FFF;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+}
+
+.profile > img {
+    width: 30px;
+    height: 30px;
+    margin: 0 15px;
+    display: inline-block;
+}
+
+.profile > #logout{
+    width: auto;
+    height: 100%;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+#logout:hover {
+    font-weight: normal;
+}
+
+.active{
+    background-color: #32ba7f;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.card {
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #eee;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.card .medal-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 25px solid transparent;
+    border-top-color: #eee;
+    border-left-color: #eee;
+}
+
+.card .medal{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 4px;
+    left: 4px;
+    border-radius: 50%;
+    background-color: #f8cc06;
+    border: 2px dotted rgba(0, 0, 0, 0.1)
+}
+
+.card:nth-child(2) .medal{
+    background-color: #eeaf50
+}
+
+.card:last-child .medal{
+    background-color: #aaa
+}
+
+.avatar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.card .avatar{
+    width: 90px;
+}
+
+.card .details{
+    flex: 1;
+    padding: 0 12px;
+    border: 2px solid #eee;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.card .details div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 2px solid #eee;
+}
+
+.card .details div:last-child{
+    border-bottom: none;
+}
+
+.card .score-container{
+    padding-left: 12px;
+
+}
+
+.card .score-container .table{
+    width: 100px;
+    height: 100%;
+    border: 2px solid #eee;
+    border-radius: 5px;
+}
+
+.card .score-container .table div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .score-container .table div:first-child{
+    border-bottom: 2px solid #eee;
+    background-color: #f5f5f5;
+    height: 40%;
+}
+
+.card .score-container .table div:last-child{
+    height: 60%;
+}
+
+.card .score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #FFF;
+    background-color: #32ba7f;
+    border: 2px solid rgba(255, 255, 255, 0.3)
+}
+
+.box{
+    border: 2px solid #eee;
+    border-radius: 5px;
+}
+
+.header{
+    border-bottom: 2px solid #eee;
+    background-color: #f7f7f7;
+    padding: 12px;
+}
+
+.progress {
+    background-color: #ddd;
+    border-radius: 3px;
+}
+
+.progress > div{
+    background-color: #32ba7f;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 0.8em;
+    border-radius: 3px;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 0 5px;
+}

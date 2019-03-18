@@ -1,0 +1,142 @@
+.signin, .new-question{
+    border: 2px solid #eee;
+    border-radius: 3px;
+}
+
+.signin header, .new-question header {
+    height: 65px;
+    border-bottom: 2px solid #eee;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.signin-content, .new-question-content{
+    padding: 12px;
+}
+
+.signin-content img {
+    display: block;
+    width: 120px;
+    height: auto;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.signin-content .title{
+    text-align: center;
+    color: #32ba7f;
+    margin-bottom: 20px;
+}
+
+button{
+    width: 100%;
+    padding: 8px 0;
+    background-color: #32ba7f;
+    color: #FFF;
+    font-size: 1em;
+    font-weight: bold;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-width: 2px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.divider{
+    position: relative;
+}
+
+.divider > hr{
+    position: absolute;
+    left: 0;
+    right: 0;
+    border:1px solid #eee;
+}
+
+.divider > span {
+    margin: auto;
+    display: block;
+    width: 40px;
+    position: relative;
+    background-color: #FFF;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+.result-card{
+    position: relative;
+    margin-top: 12px;
+    padding: 12px 15px;
+    border: 2px solid #eee;
+    border-radius: 5px;
+}
+
+.result-card h4 {
+    margin-bottom: 20px;
+}
+
+.result-card h5 {
+    text-align: center;
+}
+
+.result-card.mine{
+    border-color: #32ba7f !important;
+    background-color: #32ba7f1a;
+}
+
+.result-card .tag{
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    background-color: #cfc52e;
+    color: #FFF;
+    position: absolute;
+    top: -18px;
+    right: -18px;
+    font-size: 0.7em;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: none;
+}
+
+.result-card.mine .tag{
+    display: flex;
+}
+
+.view-poll-link{
+    width: 100%;
+    color: #32ba7f;
+    border-radius: 5px;
+    border: 2px solid #32ba7f;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.questions_container .box {
+    margin-bottom: 12px;
+}
+
+.questions_container .box:last-child{
+    margin-bottom: 0px;
+}
+
+.not_found{
+    text-align: center;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    padding: 20px;
+    color: #666;
+}
